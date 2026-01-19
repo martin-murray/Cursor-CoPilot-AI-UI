@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Cursor CoPilot AI UI - Design System Demo</title>
+  <link rel="stylesheet" href="design-tokens.css">
+  <link rel="stylesheet" href="components.css">
+</head>
+<body>
+  <!-- Main Container -->
+  <div class="container py-12">
+    <!-- Header Section -->
+    <header class="mb-8">
+      <h1 class="heading-1">Cursor CoPilot AI UI</h1>
+      <p class="text-body text-muted">A minimal design system built for Cursor/Copilot workflows. This demo showcases the design tokens and base components.</p>
+    </header>
+
+    <!-- Design Tokens Overview -->
+    <section class="mb-8">
+      <h2 class="heading-2">Design System Overview</h2>
+      <p class="text-body">This design system provides atomic tokens and base components for building consistent, client-ready UIs. All components use standardized typography, spacing, and color tokens.</p>
+    </section>
+
+    <!-- Components Demo -->
+    <section class="mb-8">
+      <h2 class="heading-2">Base Components</h2>
+
+      <!-- Buttons -->
+      <div class="card mb-6">
+        <div class="card-header">
+          <h3 class="card-title">Buttons</h3>
+          <p class="card-description">Primary and secondary button styles with size variations</p>
+        </div>
+        <div class="card-content">
+          <div class="flex flex-wrap gap-4 mb-4">
+            <button class="button button-primary">Primary Button</button>
+            <button class="button button-secondary">Secondary Button</button>
+            <button class="button button-primary" disabled>Disabled Button</button>
+          </div>
+          <div class="flex flex-wrap gap-4">
+            <button class="button button-primary button-small">Small</button>
+            <button class="button button-primary">Default</button>
+            <button class="button button-primary button-large">Large</button>
+          </div>
+        </div>
+      </div>
+
+      <!-- Form Inputs -->
+      <div class="card mb-6">
+        <div class="card-header">
+          <h3 class="card-title">Form Inputs</h3>
+          <p class="card-description">Text inputs with labels and states</p>
+        </div>
+        <div class="card-content">
+          <div class="form-group">
+            <label class="form-label" for="name">Name</label>
+            <input type="text" id="name" class="input" placeholder="Enter your name">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="email">Email Address</label>
+            <input type="email" id="email" class="input" placeholder="you@example.com">
+          </div>
+          <div class="form-group">
+            <label class="form-label" for="message">Message</label>
+            <input type="text" id="message" class="input" placeholder="Your message" disabled>
+            <p class="text-small mt-4">Disabled input state</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Typography -->
+      <div class="card mb-6">
+        <div class="card-header">
+          <h3 class="card-title">Typography Scale</h3>
+          <p class="card-description">Modular typography scale for consistent text hierarchy</p>
+        </div>
+        <div class="card-content">
+          <h1 class="heading-1">Heading 1 - Main Page Title</h1>
+          <h2 class="heading-2">Heading 2 - Section Title</h2>
+          <h3 class="heading-3">Heading 3 - Subsection Title</h3>
+          <h4 class="heading-4">Heading 4 - Component Title</h4>
+          <p class="text-body">Body text - This is the standard body text used throughout the application. It's designed for optimal readability with comfortable line height and spacing.</p>
+          <p class="text-small">Small text - Used for captions, labels, and supporting information.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Feature Cards Grid -->
+    <section class="mb-8">
+      <h2 class="heading-2">Example Feature Grid</h2>
+      <div class="grid grid-cols-3 mt-6">
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Design Tokens</h4>
+          </div>
+          <div class="card-content">
+            <p class="text-body">Atomic design values for typography, spacing, and colors ensure visual consistency across all components.</p>
+          </div>
+          <div class="card-footer">
+            <button class="button button-secondary button-small">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">Base Components</h4>
+          </div>
+          <div class="card-content">
+            <p class="text-body">Reusable UI building blocks built with design tokens for rapid, consistent interface development.</p>
+          </div>
+          <div class="card-footer">
+            <button class="button button-secondary button-small">Learn More</button>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-header">
+            <h4 class="card-title">AI UX Guardrails</h4>
+          </div>
+          <div class="card-content">
+            <p class="text-body">Automated quality checks to maintain design consistency in Cursor/Copilot workflows.</p>
+          </div>
+          <div class="card-footer">
+            <button class="button button-secondary button-small">Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Interactive Demo -->
+    <section class="mb-8">
+      <h2 class="heading-2">Interactive Demo</h2>
+      <div class="card">
+        <div class="card-header">
+          <h3 class="card-title">Contact Form</h3>
+          <p class="card-description">A practical example using multiple components together</p>
+        </div>
+        <div class="card-content">
+          <form id="contactForm">
+            <div class="form-group">
+              <label class="form-label" for="fullName">Full Name</label>
+              <input type="text" id="fullName" class="input" placeholder="John Doe" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="emailAddress">Email</label>
+              <input type="email" id="emailAddress" class="input" placeholder="john@example.com" required>
+            </div>
+            <div class="form-group">
+              <label class="form-label" for="subject">Subject</label>
+              <input type="text" id="subject" class="input" placeholder="How can we help?" required>
+            </div>
+            <div class="flex gap-4">
+              <button type="submit" class="button button-primary">Submit</button>
+              <button type="button" class="button button-secondary" onclick="document.getElementById('contactForm').reset()">Clear</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="mt-8 py-8">
+      <div class="card">
+        <div class="flex justify-between items-center">
+          <div>
+            <h4 class="heading-4">Cursor CoPilot AI UI</h4>
+            <p class="text-small">Built with design tokens and base components</p>
+          </div>
+          <div class="flex gap-4">
+            <button class="button button-secondary button-small">Documentation</button>
+            <button class="button button-primary button-small">Get Started</button>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // Simple form submission handler
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      alert('Form submitted! (Demo only - no actual submission)');
+    });
+  </script>
+</body>
+</html>
